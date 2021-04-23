@@ -26,11 +26,14 @@ class MainActivity : AppCompatActivity() {
                     this, "Please enter your name",
                     Toast.LENGTH_SHORT
                 ).show()
-
             } else {
                 // In case user has entered his name - start QuizQuestionsActivity
-                val intent = Intent(this, QuizQuestionsActivity::class.java)
-                startActivity(intent)
+                Intent(this, QuizQuestionsActivity::class.java).also {
+                    startActivity(it)
+                }
+                /*val intent = Intent(this, QuizQuestionsActivity::class.java)
+                startActivity(intent)*/
+
                 // Destroy the current activity
                 finish()
             }
