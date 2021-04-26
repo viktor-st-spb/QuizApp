@@ -10,6 +10,7 @@ data class Question(
     val id: Int,
     // Question
     val question: String,
+    // Image ID
     val image: Int,
     // Answers
     val optionOne: String,

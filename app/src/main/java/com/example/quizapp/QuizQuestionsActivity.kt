@@ -17,9 +17,9 @@ class QuizQuestionsActivity : AppCompatActivity() {
         /*** Setting the question in the UI from the list ***/
         /****************************************************/
 
-        // Default and the first question position
+        // Default and the first question position of questionsList
         val currentPosition = 1
-        // Getting the question from the list with the help of current position
+        // Getting one question from the list with the help of current position
         val question: Question = questionsList[currentPosition - 1]
 
         // Setting the current progress in the progressbar using the position of question
@@ -28,6 +28,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
         tv_progress.text = "$currentPosition" + "/" + progressBar.max
 
         // Set the current question and the options in the UI
+        // according to chosen question
         tv_question.text = question.question
         iv_image.setImageResource((question.image))
         tv_option_one.text = question.optionOne

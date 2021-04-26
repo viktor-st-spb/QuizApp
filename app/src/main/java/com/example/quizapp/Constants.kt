@@ -7,7 +7,7 @@ package com.example.quizapp
 object Constants {
 
     /******************************************************************/
-    /*** Create one constant that will contain all of tte questions ***/
+    /*** Create one constant that will contain all of the questions ***/
     /******************************************************************/
 
     // The function returns an ArrayList of Questions.
