@@ -6,6 +6,12 @@ import android.util.Log
 import kotlinx.android.synthetic.main.activity_quiz_questions.*
 
 class QuizQuestionsActivity : AppCompatActivity() {
+
+    // Current and default choice of an answer
+    private var mCurrentPosition: Int = 1
+    private var mQuestionsList: ArrayList<Question>? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
