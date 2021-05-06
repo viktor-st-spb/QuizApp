@@ -13,8 +13,7 @@ object Constants {
     // The function returns an ArrayList of Questions.
     // Each of questions contains all information of Question.kt class
     fun getQuestions(): ArrayList<Question> {
-        // Create the empty list of questions
-        val questionsList = ArrayList<Question>()
+        val questionsList = ArrayList<Question>() // Create an empty list of questions
 
         // 1 - First question
         val que1 = Question(
@@ -37,7 +36,6 @@ object Constants {
             "Angola", "Austria",
             "Australia", "Armenia", 3
         )
-
         questionsList.add(que2)
 
         // 3
@@ -47,7 +45,6 @@ object Constants {
             "Belarus", "Belize",
             "Brunei", "Brazil", 4
         )
-
         questionsList.add(que3)
 
         // 4
@@ -57,7 +54,6 @@ object Constants {
             "Bahamas", "Belgium",
             "Barbados", "Belize", 2
         )
-
         questionsList.add(que4)
 
         // 5
@@ -67,7 +63,6 @@ object Constants {
             "Gabon", "France",
             "Fiji", "Finland", 3
         )
-
         questionsList.add(que5)
 
         // 6
@@ -77,7 +72,6 @@ object Constants {
             "Germany", "Georgia",
             "Greece", "none of these", 1
         )
-
         questionsList.add(que6)
 
         // 7
@@ -87,7 +81,6 @@ object Constants {
             "Dominica", "Egypt",
             "Denmark", "Ethiopia", 3
         )
-
         questionsList.add(que7)
 
         // 8
@@ -97,7 +90,6 @@ object Constants {
             "Ireland", "Iran",
             "Hungary", "India", 4
         )
-
         questionsList.add(que8)
 
         // 9
@@ -107,7 +99,6 @@ object Constants {
             "Australia", "New Zealand",
             "Tuvalu", "United States of America", 2
         )
-
         questionsList.add(que9)
 
         // 10
@@ -117,10 +108,8 @@ object Constants {
             "Kuwait", "Jordan",
             "Sudan", "Palestine", 1
         )
-
         questionsList.add(que10)
 
         return questionsList
-
     }
 }

@@ -12,11 +12,11 @@ data class Question(
     val question: String,
     // Image ID
     val image: Int,
-    // Answers
+    // Four possible answers
     val optionOne: String,
     val optionTwo: String,
     val optionThree: String,
     val optionFour: String,
-    // Nhe number of the correct answer (1, 2, 3 or 4)
+    // The number of the correct answer (1, 2, 3 or 4)
     val correctAnswer: Int
 )

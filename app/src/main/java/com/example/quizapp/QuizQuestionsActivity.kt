@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_quiz_questions.*
@@ -26,13 +27,12 @@ class QuizQuestionsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_quiz_questions)
 
         mQuestionsList = Constants.getQuestions()
+        Log.i("QuestionsSize", "${mQuestionsList!!.size}")
 
         /****************************************************/
         /*** Setting the question in the UI from the list ***/
         /****************************************************/
         setQuestion()
-
-
     }
 
     private  fun setQuestion(){
