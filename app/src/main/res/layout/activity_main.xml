@@ -76,7 +76,8 @@
                 android:background="@color/design_default_color_primary"
                 android:text="@string/start"
                 android:textSize="18sp"
-                android:textColor="@android:color/white">
+                android:textColor="@android:color/white"
+                android:textAllCaps="false">
             </androidx.appcompat.widget.AppCompatButton>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
